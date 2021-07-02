@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
     <TileMap version="1.0.0" tilemapservice="http://tms.osgeo.org/1.0.0">
-      <Title>tambo_8589_watermasked_leafletproj_NAs.tif</Title>
+      <Title>tambo_8589_watermask_leafletproj_NAs.tif</Title>
       <Abstract></Abstract>
       <SRS>EPSG:3857</SRS>
       <BoundingBox minx="120.00000000000000" miny="30.00003572831016" maxx="150.00003116828111" maxy="49.99999999999999"/>
