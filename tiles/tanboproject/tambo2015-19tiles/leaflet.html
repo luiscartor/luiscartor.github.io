@@ -3,11 +3,11 @@
           <head>
             <meta charset="utf-8">
             <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
-            <title>tambo_1519_watermask_leafletproj_NAs.tif</title>
+            <title>tambo_1519_hokkmasked_leafletproj_NAs.tif</title>
 
             <!-- Leaflet -->
-            <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
-            <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.5/dist/leaflet.css" />
+            <script src="https://unpkg.com/leaflet@0.7.5/dist/leaflet.js"></script>
 
             <style>
                 body { margin:0; padding:0; }
@@ -57,7 +57,7 @@
 
         // Map
         var map = L.map('map', {
-            center: [40.000017864155076, 135.00001558414056],
+            center: [35.926328817317746, 136.3870741796651],
             zoom: 12,
             minZoom: 5,
             maxZoom: 12,
@@ -75,7 +75,7 @@
             return this._div;
         };
         title.update = function(props) {
-            this._div.innerHTML = "tambo_1519_watermask_leafletproj_NAs.tif";
+            this._div.innerHTML = "tambo_1519_hokkmasked_leafletproj_NAs.tif";
         };
         title.addTo(map);
 
@@ -97,7 +97,7 @@
         L.control.layers(basemaps, overlaymaps, {collapsed: false}).addTo(map);
 
         // Fit to overlay bounds (SW and NE points with (lat, lon))
-        map.fitBounds([[30.000035728310156, 150.0000311682811], [49.99999999999999, 120.0]]);
+        map.fitBounds([[27.018907634635493, 144.43064835933018], [44.83375, 128.3435]]);
 
         </script>
 

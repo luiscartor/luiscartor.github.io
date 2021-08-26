@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
     <TileMap version="1.0.0" tilemapservice="http://tms.osgeo.org/1.0.0">
-      <Title>tambo_1519_watermask_leafletproj_NAs.tif</Title>
+      <Title>tambo_1519_hokkmasked_leafletproj_NAs.tif</Title>
       <Abstract></Abstract>
       <SRS>EPSG:3857</SRS>
-      <BoundingBox minx="120.00000000000000" miny="30.00003572831016" maxx="150.00003116828111" maxy="49.99999999999999"/>
-      <Origin x="120.00000000000000" y="30.00003572831016"/>
+      <BoundingBox minx="128.34350000000001" miny="27.01890763463549" maxx="144.43064835933018" maxy="44.83375000000000"/>
+      <Origin x="128.34350000000001" y="27.01890763463549"/>
       <TileFormat width="256" height="256" mime-type="image/png" extension="png"/>
       <TileSets profile="mercator">
         <TileSet href="5" units-per-pixel="4891.96980937500030" order="5"/>

@@ -3,11 +3,11 @@
           <head>
             <meta charset="utf-8">
             <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
-            <title>tambo_8589_watermask_leafletproj_NAs.tif</title>
+            <title>tambo_8589_hokkmasked_leafletproj_NAs.tif</title>
 
             <!-- Leaflet -->
-            <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
-            <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.5/dist/leaflet.css" />
+            <script src="https://unpkg.com/leaflet@0.7.5/dist/leaflet.js"></script>
 
             <style>
                 body { margin:0; padding:0; }
@@ -41,25 +41,25 @@
 
         // Base layers
         //  .. OpenStreetMap
-        var osm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors', minZoom: 5, maxZoom: 12});
+        var osm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors', minZoom: 4, maxZoom: 12});
 
         //  .. CartoDB Positron
-        var cartodb = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>', minZoom: 5, maxZoom: 12});
+        var cartodb = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>', minZoom: 4, maxZoom: 12});
 
         //  .. OSM Toner
-        var toner = L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png', {attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.', minZoom: 5, maxZoom: 12});
+        var toner = L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png', {attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.', minZoom: 4, maxZoom: 12});
 
         //  .. White background
-        var white = L.tileLayer("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEAAQMAAABmvDolAAAAA1BMVEX///+nxBvIAAAAH0lEQVQYGe3BAQ0AAADCIPunfg43YAAAAAAAAAAA5wIhAAAB9aK9BAAAAABJRU5ErkJggg==", {minZoom: 5, maxZoom: 12});
+        var white = L.tileLayer("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEAAQMAAABmvDolAAAAA1BMVEX///+nxBvIAAAAH0lEQVQYGe3BAQ0AAADCIPunfg43YAAAAAAAAAAA5wIhAAAB9aK9BAAAAABJRU5ErkJggg==", {minZoom: 4, maxZoom: 12});
 
         // Overlay layers (TMS)
-        var lyr = L.tileLayer('./{z}/{x}/{y}.png', {tms: true, opacity: 0.7, attribution: "", minZoom: 5, maxZoom: 12});
+        var lyr = L.tileLayer('./{z}/{x}/{y}.png', {tms: true, opacity: 0.7, attribution: "", minZoom: 4, maxZoom: 12});
 
         // Map
         var map = L.map('map', {
-            center: [40.000017864155076, 135.00001558414056],
+            center: [35.926328817317746, 136.3870741796651],
             zoom: 12,
-            minZoom: 5,
+            minZoom: 4,
             maxZoom: 12,
             layers: [osm]
         });
@@ -75,7 +75,7 @@
             return this._div;
         };
         title.update = function(props) {
-            this._div.innerHTML = "tambo_8589_watermask_leafletproj_NAs.tif";
+            this._div.innerHTML = "tambo_8589_hokkmasked_leafletproj_NAs.tif";
         };
         title.addTo(map);
 
@@ -97,7 +97,7 @@
         L.control.layers(basemaps, overlaymaps, {collapsed: false}).addTo(map);
 
         // Fit to overlay bounds (SW and NE points with (lat, lon))
-        map.fitBounds([[30.000035728310156, 150.0000311682811], [49.99999999999999, 120.0]]);
+        map.fitBounds([[27.018907634635493, 144.43064835933018], [44.83375, 128.3435]]);
 
         </script>
 
