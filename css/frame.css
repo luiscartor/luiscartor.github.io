@@ -377,6 +377,7 @@ ol.publication.C-list li p:before {
   content: "[C"counter(C-counter)"]";
 }
 
+
 ol.publication.J-list {
   counter-reset: J-counter;
 }
@@ -449,6 +450,42 @@ ol.publication.F-list li p:before {
   content: "[F"counter(F-counter)"]";
 }
 
+ol.publication.G-list {
+  counter-reset: G-counter;
+}
+
+ol.publication.G-list li p {
+  counter-increment: G-counter;
+}
+
+ol.publication.G-list li p:before {
+  content: "[G"counter(G-counter)"]";
+}
+
+ol.publication.W-list {
+  counter-reset: W-counter;
+}
+
+ol.publication.W-list li p {
+  counter-increment: W-counter;
+}
+
+ol.publication.W-list li p:before {
+  content: "[W"counter(W-counter)"]";
+}
+
+ol.publication.D-list {
+  counter-reset: D-counter;
+}
+
+ol.publication.D-list li p {
+  counter-increment: D-counter;
+}
+
+ol.publication.D-list li p:before {
+  content: "[D"counter(D-counter)"]";
+}
+
 ol.publication.A-list {
   counter-reset: A-counter;
 }
@@ -460,6 +497,7 @@ ol.publication.A-list li p {
 ol.publication.A-list li p:before {
   content: "[A"counter(A-counter)"]";
 }
+
 
 ol.nested {
   list-style: none;
